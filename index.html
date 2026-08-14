@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DE_code — создание современных сайтов</title>
+  <meta name="description" content="DE_code — разработка сайтов под ключ: дизайн, вёрстка, 3D-графика и анимации. Быстро, адаптивно, с вниманием к деталям.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fbbf24'/%3E%3Cstop offset='1' stop-color='%23ea580c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%230b0806'/%3E%3Ctext x='32' y='42' font-family='Arial Black, sans-serif' font-size='26' font-weight='900' text-anchor='middle' fill='url(%23g)'%3EDE%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <canvas id="bg3d" aria-hidden="true"></canvas>
+  <div class="bg-vignette" aria-hidden="true"></div>
+
+  <header class="header" id="header">
+    <a class="logo" href="#top">DE<span>_code</span></a>
+    <nav class="nav">
+      <a href="#works">Работы</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn-small btn-primary" href="https://t.me/nemtix" target="_blank" rel="noopener">Обсудить проект</a>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="badge anim-in" style="--d:.05s"><span class="pulse-dot"></span>ВЕБ-РАЗРАБОТКА · ДИЗАЙН · 3D</div>
+        <h1 class="anim-in" style="--d:.15s">Создаю сайты,<br>которые <span class="grad">запоминаются</span></h1>
+        <p class="lead anim-in" style="--d:.3s">
+          DE_code — разработка сайтов под ключ: дизайн, вёрстка, 3D-графика
+          и живые анимации. Быстро, адаптивно и с вниманием к каждой детали.
+        </p>
+        <div class="hero-cta anim-in" style="--d:.45s">
+          <a href="#works" class="btn btn-primary">Смотреть работы <span class="arr">↓</span></a>
+          <a href="#contacts" class="btn btn-ghost">Связаться</a>
+        </div>
+        <div class="hero-tags anim-in" style="--d:.6s">
+          <span>Адаптивная вёрстка</span>
+          <span>WebGL / 3D</span>
+          <span>60 fps анимации</span>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">SCROLL</div>
+    </section>
+
+    <!-- WORKS -->
+    <section class="works" id="works">
+      <div class="section-head reveal">
+        <span class="section-tag">01 — РАБОТЫ</span>
+        <h2>Избранные <span class="grad">проекты</span></h2>
+        <p class="section-sub">Наведите курсор на карточку — скриншоты проекта проплывут киноплёнкой.</p>
+      </div>
+
+      <div class="works-grid">
+
+        <!-- Проект 1: VERTEX -->
+        <a class="work-card reveal" href="https://vertex-one-tan.vercel.app/#" target="_blank" rel="noopener">
+          <div class="work-media">
+            <img class="work-main" src="images/Screenshot_23.png" alt="VERTEX — иммерсивный сайт цифровой студии">
+            <div class="filmstrip" aria-hidden="true">
+              <img src="images/Screenshot_1.png"  style="--i:0" alt="">
+              <img src="images/Screenshot_2.png"  style="--i:1" alt="">
+              <img src="images/Screenshot_3.png"  style="--i:2" alt="">
+              <img src="images/Screenshot_23.png" style="--i:3" alt="">
+            </div>
+            <span class="work-open">Открыть сайт ↗</span>
+          </div>
+          <div class="work-info">
+            <div class="work-text">
+              <h3>VERTEX</h3>
+              <p>Иммерсивный сайт цифровой студии: WebGL-сцены, 3D-объекты и плавные анимации.</p>
+            </div>
+            <div class="work-meta">
+              <span>Three.js</span><span>WebGL</span><span>2026</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Проект 2: скоро -->
+        <div class="work-card work-card--soon reveal" aria-label="Место для будущего проекта">
+          <div class="soon-inner">
+            <span class="soon-plus">+</span>
+            <h3>Скоро</h3>
+            <p>Здесь появится новый проект</p>
+          </div>
+        </div>
+
+        <!-- Проект 3: скоро -->
+        <div class="work-card work-card--soon reveal" aria-label="Место для будущего проекта">
+          <div class="soon-inner">
+            <span class="soon-plus">+</span>
+            <h3>Скоро</h3>
+            <p>Здесь появится новый проект</p>
+          </div>
+        </div>
+
+        <!-- Проект 4: скоро -->
+        <div class="work-card work-card--soon reveal" aria-label="Место для будущего проекта">
+          <div class="soon-inner">
+            <span class="soon-plus">+</span>
+            <h3>Скоро</h3>
+            <p>Здесь появится новый проект</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section class="contacts" id="contacts">
+      <div class="section-head reveal">
+        <span class="section-tag">02 — КОНТАКТЫ</span>
+        <h2>Есть идея?<br><span class="grad">Давайте обсудим.</span></h2>
+        <p class="section-sub">Напишите, что за сайт вам нужен — отвечу быстро и предложу решение.</p>
+      </div>
+
+      <div class="contact-cards reveal">
+        <a class="contact-card" href="mailto:nexua8086@gmail.com">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="5" width="18" height="14" rx="2.5"/>
+              <path d="m3.5 7 8.5 6 8.5-6"/>
+            </svg>
+          </span>
+          <span class="contact-text">
+            <small>Почта</small>
+            <strong>nexua8086@gmail.com</strong>
+          </span>
+          <span class="contact-arrow">→</span>
+        </a>
+
+        <a class="contact-card" href="https://t.me/nemtix" target="_blank" rel="noopener">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 4 3 11.2l5.6 2L10.2 19l2.6-3.7 4.7 2.9L21 4Z"/>
+              <path d="M8.6 13.2 21 4"/>
+            </svg>
+          </span>
+          <span class="contact-text">
+            <small>Telegram</small>
+            <strong>@nemtix</strong>
+          </span>
+          <span class="contact-arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <span>© <span id="year">2026</span> DE_code</span>
+    <span class="footer-note">Сайты, которые работают на вас</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
